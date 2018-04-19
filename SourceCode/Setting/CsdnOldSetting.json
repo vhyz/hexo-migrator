@@ -1,0 +1,39 @@
+{
+  "name": "csdn_old",
+  "index_url": {
+    "tag": "span",
+    "key": "class",
+    "valve": "link_title"
+  },
+  "next_page": {
+    "tag": "a",
+    "key": "rel",
+    "valve": "next",
+    "text": true
+  },
+  "title": {
+    "tag": "span",
+    "key": "class",
+    "valve": "link_title"
+  },
+  "time": {
+    "tag": "span",
+    "key": "class",
+    "valve": "link_postdate"
+  },
+  "category": {
+    "tag": "span",
+    "key": "onclick",
+    "valve": "_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_fenlei']);"
+  },
+  "tags": {
+    "tag": "span",
+    "key": "class",
+    "valve": "link_categories"
+  },
+  "body": {
+    "tag": "div",
+    "key": "id",
+    "valve": "article_content"
+  }
+}

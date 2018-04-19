@@ -1,0 +1,39 @@
+{
+  "name":"csdn_new",
+  "index_url": {
+    "tag": "li",
+    "key": "class",
+    "valve": "blog-unit"
+  },
+  "next_page": {
+    "tag": "a",
+    "key": "rel",
+    "valve": "next",
+    "text":true
+  },
+  "title": {
+    "tag": "h1",
+    "key": "class",
+    "valve": "csdn_top"
+  },
+  "time": {
+    "tag": "span",
+    "key": "class",
+    "valve": "time"
+  },
+  "category": {
+    "tag": "",
+    "key": "",
+    "valve": ""
+  },
+  "tags": {
+    "tag": "ul",
+    "key": "class",
+    "valve": "article_tags clearfix csdn-tracking-statistics tracking-click"
+  },
+  "body": {
+    "tag": "div",
+    "key": "id",
+    "valve": "article_content"
+  }
+}

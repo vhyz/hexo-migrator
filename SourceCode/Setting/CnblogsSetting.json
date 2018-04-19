@@ -1,0 +1,29 @@
+{
+  "name":"cnblogs",
+  "index_url": {
+    "tag": "div",
+    "key": "class",
+    "valve": "postTitle"
+  },
+  "next_page": {
+    "tag": "a",
+    "key": "href",
+    "valve": true,
+    "text":"下一页"
+  },
+  "title": {
+    "tag": "a",
+    "key": "id",
+    "valve": "cb_post_title_url"
+  },
+  "time": {
+    "tag": "span",
+    "key": "id",
+    "valve": "post-date"
+  },
+  "body": {
+    "tag": "div",
+    "key": "id",
+    "valve": "cnblogs_post_body"
+  }
+}
