@@ -1,17 +1,29 @@
 # BlogMoveToHexo
 
-用GithubPage部署了一个hexo博客后发现好像没有支持博客园搬家的插件，所以自己就用Python写了一个
+## Introduction
 
-下面是正文：
+The project can help you move your blog such as cnblogs and csdn to the hexo.
 
-## 2018.4.19
+## How to use?
 
-这是一个用Python写的从博客园与CSDN两个博客搬家至hexo博客的工具
+Run main.py and follow the instructions.
 
-使用到了核心的requests库、BeautifulSoup库两个库，也就是用基础的爬虫技术写的工具
+You should input your type of your blog,the href of your blog and the dic of your Hexo.
 
-然后再根据Markdown与HTML语法对应规则转换数据，最后再用Python自带的os模块进行更新博客
+Then this program will help you move your blog.
 
-目前博客园搬家算是比较完整的了，CSDN博客搬家好像还没写完（因为我用的是博客园
+## Who can use?
 
-使用的时候只需要打开运行main.py按照程序的步骤依次输入博客种类、博客首页地址以及hexo目录就可以用了
+Someone you write the article at your old blog with Markdown can use this program.
+
+But you also can use this tool with compatibility mode.
+
+## What is the difference of csdn_old and csdn_new?
+
+If the background of your csdn is white,you should select csdn_new.
+
+Or you should select csdn_old.
+
+## What is Setting?
+
+You can use modify the setting to move any blog to Hexo with json in theory.
