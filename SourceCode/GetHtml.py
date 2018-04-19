@@ -46,14 +46,6 @@ class GetHtml(object):
         html=self.get_html(self.__url)
         soup=BeautifulSoup(html,'lxml')
         lista=[]
-        '''
-        if Blog == 'cnblogs':
-            lista=soup.find_all('div',class_='postTitle')
-            next_page=soup.find('a',text='下一页')
-        else:
-            lista=soup.find_all('span',class_='link_title')
-            next_page = soup.find('a', rel='next')
-        '''
         lista=soup.find_all(Blog['index_url']['tag'],attrs={Blog['index_url']['key']:Blog['index_url']['valve']})
         next_page=soup.find(Blog['next_page']['tag'],attrs={Blog['next_page']['key']:Blog['next_page']['valve'],},text=Blog['next_page']['text'])
         self.__url=''
