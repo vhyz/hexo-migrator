@@ -1,4 +1,4 @@
-# BlogMoveToHexo
+# hexo-migrator
 
 ## Introduction
 
