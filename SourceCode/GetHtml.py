@@ -108,7 +108,7 @@ class GetHtml(object):
     def get_categoris_cnblogs(self,blogApp,blogId,postId):
         get_data={'blogApp':blogApp,'blogId':blogId,'postId':postId}
         url = "http://www.cnblogs.com/mvc/blog/CategoriesTags.aspx"
-        r=requests.get(url,data=get_data)
+        r=requests.get(url,params=get_data)
         r_json=r.json()
         category_soup=BeautifulSoup(r_json['Categories'],'lxml')
         tags_soup=BeautifulSoup(r_json['Tags'],'lxml')
