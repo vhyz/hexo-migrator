@@ -5,17 +5,17 @@ import HtmlToMarkdown
 import os
 import json
 
-def deploy(mk):
-    os.chdir(mk)
-    os.system('hexo g')
-    os.system('hexo d')
 
-def get_article(Blog,url,mk):
+def get_article(Blog,url):
     html = GetHtml.GetHtml(url, Blog)
     print(html.get_cnt())
     article_list = html.get_article_list()
+    try:
+        os.mkdir('source')
+    except:
+        pass
     for article in article_list:
-        with open(mk + '\source\_posts\\' + article.title + '.md', 'w', encoding='utf-8') as w:
+        with open('source/' + article.title + '.md', 'w', encoding='utf-8') as w:
             text = "---\n" + 'title: ' + article.title + "\n" + 'date: ' + article.time + "\n"
             if article.category != '':
                 text += 'categories:\n- ' + article.category + "\n"
@@ -44,10 +44,8 @@ def main():
         Blog=json.load(f)
     print('Please input the href of your Blog')
     url=input()
-    print('Please input the load of your hexo Blog,such as E:\\hexo\\blog')
-    mk=input()
-    get_article(Blog,url,mk)
-    deploy(mk)
+    print('Running......')
+    get_article(Blog,url)
 
 
 if __name__ == '__main__':
